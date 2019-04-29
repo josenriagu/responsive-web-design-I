@@ -105,9 +105,13 @@ header a {
 @media(max-width: 800px) {
     header {
         flex-direction: column-reverse;
+        padding: 0 1rem;
     }
     .headerimage {
         padding-bottom: 2rem;
+    }
+    header a {
+        margin-right: 4.2rem;
     }
 }
 
