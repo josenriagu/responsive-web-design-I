@@ -339,7 +339,7 @@ h2 {
 }
 
 .headernav a {
-    padding-right: 58px;
+    padding-right: 3.65rem;
     color: gray;
     text-decoration: none;
     font-weight: 500;
@@ -350,9 +350,14 @@ h2 {
         flex-direction: column-reverse;
         padding-left: 1.8rem;
         padding-right: 1.8rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+    .headernav a {
+        padding-right: 4rem;
     }
 }
+
 /* set first section styles */
 
 .section1 img {
@@ -366,6 +371,12 @@ h2 {
     padding: 0px 0 0 0;
 }
 
+@media(max-width:800px) {
+    .section1, .section2, .section3a, .section3b, .section3c, .section4{
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
+}
 /* set second section styles */
 
 .section2 {
