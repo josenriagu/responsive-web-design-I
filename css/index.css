@@ -105,13 +105,14 @@ header a {
 @media(max-width: 800px) {
     header {
         flex-direction: column-reverse;
-        padding: 0 1rem;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
     }
     .headerimage {
         padding-bottom: 2rem;
     }
     header a {
-        margin-right: 4.2rem;
+        margin-right: 4rem;
     }
 }
 
@@ -164,7 +165,7 @@ main {
     .top-content {
         display: flex;
         flex-direction: column;
-        margin: 0 1rem;
+        margin: 0 1.8rem;
     }
     .top-image {
         display: none;
@@ -193,13 +194,23 @@ main {
     border-bottom: 1px solid black;
 }
 
+.two {
+    margin-right: 0.63rem;
+}
 .one {
     margin-right: 0.63rem;
 }
 
 @media(max-width: 800px) {
     .middle-content {
-        margin: 0 1rem;
+        margin: 0 1.8rem;
+    }
+    .upper, .lower{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .one{
+        padding-right: 1rem;
     }
 }
 /* set bottom content styles */
@@ -215,7 +226,7 @@ main {
 
 @media(max-width: 800px) {
     .bottom-content{
-        margin: 1rem;
+        margin: 1.8rem;
     }
 }
 
@@ -230,7 +241,7 @@ footer {
 
 @media(max-width: 800px) {
     .footer{
-        margin: 1rem;
+        margin: 1.8rem;
     }
 }
 
