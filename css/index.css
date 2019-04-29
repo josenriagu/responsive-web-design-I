@@ -72,7 +72,11 @@ h1 {
     text-align: center;
 }
 
-
+@media(max-width: 500px) {
+    h1{
+        font-size: 3.7rem;
+    }
+}
 
 /* set container styles */
 
@@ -197,6 +201,10 @@ main {
 }
 
 @media(max-width: 500px) {
+    .top-content button{
+        margin-top: 0;
+        padding: 0.3rem 2rem;
+    }
 }
 
 /* set middle content styles */
@@ -239,6 +247,10 @@ main {
     .one{
         padding-right: 1rem;
     }
+}
+
+@media(max-width: 500px){
+    
 }
 /* set bottom content styles */
 
