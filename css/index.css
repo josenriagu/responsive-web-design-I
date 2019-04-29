@@ -323,7 +323,7 @@ h2 {
     margin: 0 auto;
 }
 
-/* set header styles */
+/* set header styles and media queries */
 
 .srvheader {
     margin: 1.4rem 0 1.25rem 0;
@@ -358,7 +358,7 @@ h2 {
     }
 }
 
-/* set first section styles */
+/* set first section styles and section media queries */
 
 .section1 img {
     width: 100%;
@@ -372,11 +372,12 @@ h2 {
 }
 
 @media(max-width:800px) {
-    .section1, .section2, .section3a, .section3b, .section3c, .section4{
+    .section1, .section2, .section3a, .section3b, .section3c, .section4 {
         margin-left: 1.8rem;
         margin-right: 1.8rem;
     }
 }
+
 /* set second section styles */
 
 .section2 {
