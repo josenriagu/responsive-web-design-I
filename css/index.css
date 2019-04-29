@@ -250,7 +250,15 @@ main {
 }
 
 @media(max-width: 500px){
-    
+    .upper, .lower{
+        flex-direction: column;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mob {
+        padding-bottom: 1rem;
+    }
 }
 /* set bottom content styles */
 
