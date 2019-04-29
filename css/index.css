@@ -85,9 +85,6 @@ h1 {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: column;
-    align-content: flex-start; */
 }
 
 /* set header styles and media queries */
@@ -322,12 +319,14 @@ h2 {
     padding: 3px;
     margin: 0px 230px 0px 230px;
     height: auto;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 /* set header styles */
 
 .srvheader {
-    margin: 40px 0 20px 0;
+    margin: 1.4rem 0 1.25rem 0;
     /* flexbox things */
     display: flex;
     flex-direction: row;
@@ -346,6 +345,14 @@ h2 {
     font-weight: 500;
 }
 
+@media(max-width:800px) {
+    .srvheader {
+        flex-direction: column-reverse;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        margin-bottom: 4rem;
+    }
+}
 /* set first section styles */
 
 .section1 img {
