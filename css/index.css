@@ -160,7 +160,7 @@ main {
     .top-content {
         display: flex;
         flex-direction: column;
-        /* padding: 2rem; */
+        margin: 0 1rem;
     }
     .top-image {
         display: none;
@@ -170,12 +170,12 @@ main {
 /* set middle content styles */
 
 .middle-content {
-    padding-bottom: 30px;
+    padding-bottom: 1.9rem;
 }
 
 .upper {
-    width: 100%;
-    padding-top: 30px;
+    /* width: 100%; */
+    padding-top: 1.9rem;
     display: flex;
 }
 
@@ -184,38 +184,50 @@ main {
 }
 
 .lower {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     border-bottom: 1px solid black;
 }
 
 .one {
-    margin-right: 10px;
+    margin-right: 0.63rem;
 }
 
 @media(max-width: 800px) {
     .middle-content {
-        padding: 1rem;
+        margin: 0 1rem;
     }
 }
 /* set bottom content styles */
 
 .bottom-content {
     width: 30%;
-    margin-top: 30px;
+    margin-top: 1.9rem;
 }
 
 .bottom-content p {
-    padding-bottom: 10px;
+    padding-bottom: 0.63rem;
+}
+
+@media(max-width: 800px) {
+    .bottom-content{
+        margin: 1rem;
+    }
 }
 
 /* set footer styles */
 
 footer {
     width: auto;
-    padding: 30px 0px;
+    padding: 1.9rem 0px;
     display: flex;
     justify-content: center;
+}
+
+@media(max-width: 800px) {
+    .footer{
+        margin: 1rem;
+    }
 }
 
 /* finish! */
@@ -253,7 +265,7 @@ h2 {
 }
 
 .headernav {
-    padding-top: 10px;
+    padding-top: 0.63rem;
 }
 
 .headernav a {
@@ -272,7 +284,7 @@ h2 {
 
 .section1 {
     /* background-color: blueviolet; */
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     padding: 0px 0 0 0;
 }
 
@@ -336,7 +348,7 @@ button {
     margin-top: 20px;
     border: 1px solid black;
     border-radius: 5px;
-    padding: 10px;
+    padding: 0.63rem;
     padding-left: 40px;
     padding-right: 40px;
     cursor: pointer;
@@ -372,7 +384,7 @@ button {
 }
 
 .one4 li {
-    padding-bottom: 10px;
+    padding-bottom: 0.63rem;
 }
 
 .two4 {
