@@ -61,11 +61,13 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* set root font size in 'rem' */
+
 :root {
     font-size: 16px;
 }
 
-/* set h styles */
+/* set h styles and media queries */
 
 h1 {
     font-size: 5rem;
@@ -73,7 +75,7 @@ h1 {
 }
 
 @media(max-width: 500px) {
-    h1{
+    h1 {
         font-size: 3.7rem;
     }
 }
@@ -88,7 +90,7 @@ h1 {
     align-content: flex-start; */
 }
 
-/* set header styles */
+/* set header styles and media queries */
 
 header {
     display: flex;
@@ -123,39 +125,42 @@ header a {
         margin-right: 4rem;
     }
 }
+
 @media(max-width: 500px) {
-    header{
+    header {
         margin: 0;
         padding: 0;
         padding-top: 1.4rem;
         flex-direction: column-reverse;
     }
-    nav{
+    nav {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         padding-bottom: 3rem;
     }
-    header a{
+    header a {
         text-align: center;
         border: 0.063rem solid gray;
-        margin:0;
+        margin: 0;
         padding: 0.8rem 0rem;
     }
-    .headerimage{
+    .headerimage {
         padding-bottom: 0.8rem;
     }
-    .headerimage a{
+    .headerimage a {
         border: none;
     }
 }
+
+/* set main flex behaviour */
 
 main {
     display: flex;
     flex-direction: column;
 }
 
-/* set top content styles */
+/* set top content styles and media queries */
 
 .top-content {
     /* width: 100%; */
@@ -201,13 +206,13 @@ main {
 }
 
 @media(max-width: 500px) {
-    .top-content button{
+    .top-content button {
         margin-top: 0;
         padding: 0.3rem 2rem;
     }
 }
 
-/* set middle content styles */
+/* set middle content styles and media queries */
 
 .middle-content {
     padding-bottom: 1.9rem;
@@ -232,6 +237,7 @@ main {
 .two {
     margin-right: 0.63rem;
 }
+
 .one {
     margin-right: 0.63rem;
 }
@@ -240,19 +246,21 @@ main {
     .middle-content {
         margin: 0 1.8rem;
     }
-    .upper, .lower{
+    .upper, .lower {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-    .one{
+    .one {
         padding-right: 1rem;
     }
 }
 
-@media(max-width: 500px){
-    .upper, .lower{
+@media(max-width: 500px) {
+    .middle-content {
+        margin: 0 1rem;
+    }
+    .upper, .lower {
         flex-direction: column;
-
         padding-left: 0;
         padding-right: 0;
     }
@@ -260,7 +268,8 @@ main {
         padding-bottom: 1rem;
     }
 }
-/* set bottom content styles */
+
+/* set bottom content styles and media queries */
 
 .bottom-content {
     width: 30%;
@@ -272,12 +281,12 @@ main {
 }
 
 @media(max-width: 800px) {
-    .bottom-content{
+    .bottom-content {
         margin: 1.8rem;
     }
 }
 
-/* set footer styles */
+/* set footer styles and media queries */
 
 footer {
     width: auto;
@@ -287,7 +296,7 @@ footer {
 }
 
 @media(max-width: 800px) {
-    .footer{
+    .footer {
         margin: 1.8rem;
     }
 }
