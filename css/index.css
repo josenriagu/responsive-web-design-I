@@ -1,3 +1,495 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* set root font size in 'rem' */
+
+:root {
+    font-size: 16px;
+}
+
+/* set h styles and media queries */
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+@media(max-width: 500px) {
+    h1 {
+        font-size: 3.7rem;
+    }
+}
+
+/* set container styles */
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* set header styles and media queries */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.1rem;
+    padding-top: 1.4rem;
+}
+
+header a {
+    margin-right: 2.8rem;
+    text-decoration: none;
+    color: gray;
+}
+
+.headerimage a {
+    margin: 0px;
+}
+
+@media(max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        margin-bottom: 4rem;
+    }
+    .headerimage {
+        padding-bottom: 2rem;
+    }
+    header a {
+        width: auto;
+        margin-right: 4rem;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        margin: 0;
+        padding: 0;
+        padding-top: 1.4rem;
+        flex-direction: column-reverse;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 3rem;
+    }
+    header a {
+        text-align: center;
+        border: 0.063rem solid gray;
+        margin: 0;
+        padding: 0.8rem 0rem;
+    }
+    .headerimage {
+        padding-bottom: 0.8rem;
+    }
+    .headerimage a {
+        border: none;
+    }
+}
+
+/* set main flex behaviour */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* set top content styles and media queries */
+
+.top-content {
+    /* width: 100%; */
+    border-bottom: 0.13rem solid black;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-content button {
+    background-color: inherit;
+    border: 0.0625rem solid black;
+    padding: 0.3rem 3.125rem;
+    border-radius: 0px;
+}
+
+.top-image {
+    width: 50%;
+}
+
+.top-image img {
+    width: 100%
+}
+
+@media(max-width: 800px) {
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.8rem;
+        padding-bottom: 4rem;
+    }
+    .top-image {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .top-content button {
+        margin-top: 0;
+        padding: 0.3rem 2rem;
+    }
+}
+
+/* set middle content styles and media queries */
+
+.middle-content {
+    padding-bottom: 1.9rem;
+}
+
+.upper {
+    /* width: 100%; */
+    padding-top: 1.9rem;
+    display: flex;
+}
+
+.middle img {
+    width: 100%;
+}
+
+.lower {
+    /* width: 100%; */
+    display: flex;
+    border-bottom: 0.13rem solid black;
+}
+
+.two {
+    margin-right: 0.63rem;
+}
+
+.one {
+    margin-right: 0.63rem;
+}
+
+@media(max-width: 800px) {
+    .middle-content {
+        margin: 0 1.8rem;
+    }
+    .upper, .lower {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .one {
+        padding-right: 1rem;
+    }
+}
+
+@media(max-width: 500px) {
+    .middle-content {
+        margin: 0 1rem;
+    }
+    .upper, .lower {
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .mob {
+        padding-bottom: 1rem;
+    }
+}
+
+/* set bottom content styles and media queries */
+
+.bottom-content {
+    width: 30%;
+    margin-top: 1.9rem;
+}
+
+.bottom-content p {
+    padding-bottom: 0.63rem;
+}
+
+@media(max-width: 800px) {
+    .bottom-content {
+        margin: 1.8rem;
+    }
+}
+
+/* set footer styles and media queries */
+
+footer {
+    width: auto;
+    padding: 1.9rem 0px;
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 800px) {
+    .footer {
+        margin: 1.8rem;
+    }
+}
+
+/* finish! */
+
+/* This is where I started Today! It feels great!*/
+
+/* set h styles */
+
+h2 {
+    font-size: 1.8rem;
+}
+
+/* set container style */
+
+.srvcontainer {
+    /* flexbox things */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* the rest */
+    padding: 3px;
+    margin: 0px 230px 0px 230px;
+    height: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* set header styles and media queries */
+
+.srvheader {
+    margin: 1.4rem 0 1.25rem 0;
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.headernav {
+    padding-top: 0.63rem;
+}
+
+.headernav a {
+    padding-right: 3.65rem;
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media(max-width:800px) {
+    .srvheader {
+        flex-direction: column-reverse;
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        margin-bottom: 3rem;
+        align-items: center;
+    }
+    .headernav a {
+        padding-right: 4rem;
+    }
+}
+
+/* set first section styles and section media queries */
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section1 {
+    /* background-color: blueviolet; */
+    margin-bottom: 1.9rem;
+    padding: 0px 0 0 0;
+}
+
+@media(max-width:800px) {
+    .section1, .section2, .section3a, .section3b, .section3c, .section4 {
+        margin-left: 1.8rem;
+        margin-right: 1.8rem;
+    }
+}
+
+/* set second section styles */
+
+.section2 {
+    /* background-color: brown; */
+    padding: 0px 0 40px 0;
+    border-bottom: 1px solid black;
+    text-align: justify;
+}
+
+.section2 h1 {
+    font-size: 1.8rem;
+}
+
+/* set third section styles */
+
+.section3a, .section3b, .section3c {
+    /* background-color: chocolate; */
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.section3a {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.section3b {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section3c {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid black;
+}
+
+.big {
+    /* width:50%; */
+    padding: 25px;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+}
+
+.pat {
+    margin-right: 20px;
+}
+
+.patty {
+    margin-left: 20px;
+}
+
+button {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 0.63rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* set fourth section styles */
+
+.section4 {
+    /* background-color: cornflowerblue; */
+    padding-top: 40px;
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+}
+
+.one4, .two4 {
+    width: 50%;
+}
+
+.one4 {
+    margin-right: 20px;
+}
+
+.one4 ul {
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.one4 li {
+    padding-bottom: 0.63rem;
+}
+
+.two4 {
+    margin-left: 20px;
+}
+
+.two4 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* set services footer styles */
+
+.srvfooter {
+    /* background-color: darkslategray; */
+    margin: 40px 26px 20px 26px;
+    text-align: center;
+}
