@@ -61,35 +61,39 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+:root {
+    font-size: 16px;
+}
+
 /* set h styles */
 
 h1 {
-    font-size: 80px;
+    font-size: 5rem;
     text-align: center;
 }
 
 /* set container styles */
 
 .container {
-    width: inherit;
-    margin: 20px 230px 50px 230px;
-    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    /* display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: flex-start; */
 }
 
 /* set header styles */
 
 header {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 3.1rem;
+    padding-top: 1.2rem;
 }
 
 header a {
-    margin-right: 60px;
+    margin-right: 2.8rem;
     text-decoration: none;
     color: gray;
 }
@@ -98,12 +102,33 @@ header a {
     margin: 0px;
 }
 
+@media(max-width: 800px) {
+    header {
+        flex-direction: column-reverse;
+    }
+    .headerimage {
+        padding-bottom: 2rem;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* @media(max-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+
 /* set top content styles */
 
 .top-content {
-    width: 100%;
-    border-bottom: 1px solid black;
-    padding-bottom: 60px;
+    /* width: 100%; */
+    border-bottom: 0.0625rem solid black;
+    padding-bottom: 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,8 +143,8 @@ header a {
 
 .top-content button {
     background-color: inherit;
-    border: 1px solid black;
-    padding: 5px 50px;
+    border: 0.0625rem solid black;
+    padding: 0.3rem 3.125rem;
     border-radius: 0px;
 }
 
@@ -129,6 +154,17 @@ header a {
 
 .top-image img {
     width: 100%
+}
+
+@media(max-width: 800px) {
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        /* padding: 2rem; */
+    }
+    .top-image {
+        display: none;
+    }
 }
 
 /* set middle content styles */
@@ -157,6 +193,11 @@ header a {
     margin-right: 10px;
 }
 
+@media(max-width: 800px) {
+    .middle-content {
+        padding: 1rem;
+    }
+}
 /* set bottom content styles */
 
 .bottom-content {
@@ -184,7 +225,7 @@ footer {
 /* set h styles */
 
 h2 {
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 /* set container style */
@@ -245,7 +286,7 @@ h2 {
 }
 
 .section2 h1 {
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 
 /* set third section styles */
