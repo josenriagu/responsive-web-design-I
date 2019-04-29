@@ -1,3 +1,352 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* set h styles */
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
+
+/* set container styles */
+
+.container {
+    width: inherit;
+    margin: 20px 230px 50px 230px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+/* set header styles */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+header a {
+    margin-right: 60px;
+    text-decoration: none;
+    color: gray;
+}
+
+.headerimage a {
+    margin: 0px;
+}
+
+/* set top content styles */
+
+.top-content {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-content button {
+    background-color: inherit;
+    border: 1px solid black;
+    padding: 5px 50px;
+    border-radius: 0px;
+}
+
+.top-image {
+    width: 50%;
+}
+
+.top-image img {
+    width: 100%
+}
+
+/* set middle content styles */
+
+.middle-content {
+    padding-bottom: 30px;
+}
+
+.upper {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+}
+
+.middle img {
+    width: 100%;
+}
+
+.lower {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+.one {
+    margin-right: 10px;
+}
+
+/* set bottom content styles */
+
+.bottom-content {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.bottom-content p {
+    padding-bottom: 10px;
+}
+
+/* set footer styles */
+
+footer {
+    width: auto;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+/* finish! */
+
+/* This is where I started Today! It feels great!*/
+
+/* set h styles */
+
+h2 {
+    font-size: 30px;
+}
+
+/* set container style */
+
+.srvcontainer {
+    /* flexbox things */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* the rest */
+    padding: 3px;
+    margin: 0px 230px 0px 230px;
+    height: auto;
+}
+
+/* set header styles */
+
+.srvheader {
+    margin: 40px 0 20px 0;
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.headernav {
+    padding-top: 10px;
+}
+
+.headernav a {
+    padding-right: 58px;
+    color: gray;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* set first section styles */
+
+.section1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.section1 {
+    /* background-color: blueviolet; */
+    margin-bottom: 30px;
+    padding: 0px 0 0 0;
+}
+
+/* set second section styles */
+
+.section2 {
+    /* background-color: brown; */
+    padding: 0px 0 40px 0;
+    border-bottom: 1px solid black;
+    text-align: justify;
+}
+
+.section2 h1 {
+    font-size: 30px;
+}
+
+/* set third section styles */
+
+.section3a, .section3b, .section3c {
+    /* background-color: chocolate; */
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+
+.section3a {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.section3b {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section3c {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid black;
+}
+
+.big {
+    /* width:50%; */
+    padding: 25px;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+}
+
+.pat {
+    margin-right: 20px;
+}
+
+.patty {
+    margin-left: 20px;
+}
+
+button {
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+
+/* set fourth section styles */
+
+.section4 {
+    /* background-color: cornflowerblue; */
+    padding-top: 40px;
+    /* flexbox things */
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+}
+
+.one4, .two4 {
+    width: 50%;
+}
+
+.one4 {
+    margin-right: 20px;
+}
+
+.one4 ul {
+    padding-top: 20px;
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.one4 li {
+    padding-bottom: 10px;
+}
+
+.two4 {
+    margin-left: 20px;
+}
+
+.two4 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* set services footer styles */
+
+.srvfooter {
+    /* background-color: darkslategray; */
+    margin: 40px 26px 20px 26px;
+    text-align: center;
+}
